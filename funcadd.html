@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+var p1 = 15;
+var p2 = 5;
+
+
+function jumlah(p1, p2) {
+	document.getElementById("angkaku").innerHTML = p1+p2;
+	return p1 + p2;
+}
+
+function kurang(p1, p2) {
+	document.getElementById("angkaku").innerHTML = p1-p2;
+	return p1 - p2;
+}
+
+function kali(p1, p2) {
+	document.getElementById("angkaku").innerHTML = p1*p2;
+	return p1 * p2;
+}
+
+function bagi(p1, p2) {
+	document.getElementById("angkaku").innerHTML = p1/p2;
+    return p1 / p2;
+}
+
+</script>
+
+
+<h1>Tampilan Angka</h1>
+<p id="angkaku">Tampilanku</p>
+
+<button type="button" onclick="jumlah(p1,p2)">jumlah</button>
+<button type="button" onclick="kurang(p1,p2)">kurang</button>
+<button type="button" onclick="kali(p1,p2)">kali</button>
+<button type="button" onclick="bagi(p1,p2)">bagi</button>
+
+
+
+</body>
+</html>
